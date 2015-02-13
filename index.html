@@ -55,6 +55,9 @@ Look through example code in DoML Intro: Module 1 (or Public:\DoML Week 1)</p>
 <p>The paper:
 <a href="http://homes.cs.washington.edu/%7Epedrod/papers/cacm12.pdf?utm_source=buffer&amp;utm_campaign=Buffer&amp;utm_content=buffer4697d&amp;utm_medium=twitter">http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf?utm_source=buffer&amp;utm_campaign=Buffer&amp;utm_content=buffer4697d&amp;utm_medium=twitter</a></p>
 
+<p>Consult the glossary:
+<a href="https://docs.google.com/spreadsheets/d/1PWMGQ2d3ygvMuLUc7Ce2ZOZWBMPvg4yd2vRkue181GM/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1PWMGQ2d3ygvMuLUc7Ce2ZOZWBMPvg4yd2vRkue181GM/edit?usp=sharing</a></p>
+
 <h3>
 <a id="third-module-logistic-regression" class="anchor" href="#third-module-logistic-regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Third Module: Logistic Regression</h3>
 
@@ -132,6 +135,79 @@ sklearn has some basic vectorization functions, but not much more complex than t
 <p>Stanford's CoreNLP <a href="http://nlp.stanford.edu/software/corenlp.shtml">http://nlp.stanford.edu/software/corenlp.shtml</a>,  search for python.  I haven't used this, but I've read good things about it. I mentioned the treebank, where you can look at how sentences are parsed <a href="http://nlp.stanford.edu/sentiment/treebank.html">http://nlp.stanford.edu/sentiment/treebank.html</a></p>
 
 <p>spaCy, a new package, apparently very fast; good if you have huge files, but almost no documentation: <a href="http://honnibal.github.io/spaCy/index.html">http://honnibal.github.io/spaCy/index.html</a></p>
+
+<p>DoML_email_notes_fall_2014</p>
+
+<h3>
+<a id="20140916" class="anchor" href="#20140916" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014/09/16</h3>
+
+<p>Python: Why should you learn it?</p>
+
+<p>It’d be great if we have a common platform and language to facilitate group projects.  Python is one of the easiest to pick up, and there are plenty of resources and students on campus to help you with this.  SLAC (Stay Late and Create) is holding a series of Python tutorials this semester; they meet on Wednesday nights in EH2 (look out for further information).</p>
+
+<p>Finally, this co-curricular is in large part student-driven, so be open with what you want to see happen.  Talk to your friends, talk to Paul, stay after the regular meeting to talk about the direction of group.  One year ago I knew nothing about ML, now I’m making a fool of myself talking about GAs.  You can too!</p>
+
+<h3>
+<a id="20140922" class="anchor" href="#20140922" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014/09/22</h3>
+
+<p>Hey DoML,</p>
+
+<p>Tomorrow at 6 PM in AC 417, Lindsey, Pratool, and I will be giving a presentation on linear and regularized regression in ML context.  It’d be great if you were there!  This will be a relatively low-intensity introduction to the actual manipulation of data and interpretation of results so that we can get into the machine learning state of mind.  This framing is part of the foundation for later work with progressively more complicated algorithms.</p>
+
+<h3>
+<a id="20140923" class="anchor" href="#20140923" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014/09/23</h3>
+
+<p>Hey DoML,</p>
+
+<p>Thanks to those who were able to make it to tonight’s meeting.  This was the intro to the ML framework, modifying parameters to minimize cost, when linear models are used, and the mechanics of optimization (gradient descent).  If you didn’t get everything, that’s fine, as we’ll continue talking about these topics.  Look over the slides, code, the resources below, and email me or other returning members with questions.  The slides and code are in P:\DoML Week1.</p>
+
+<p>There is an online machine course that covers what we talked about today (video lectures), presented by Andrew Ng (see Ryan’s previous email).</p>
+
+<p><a href="https://class.coursera.org/ml-005/lecture/preview">https://class.coursera.org/ml-005/lecture/preview</a></p>
+
+<p>Chapter II talks about linear regression directly.  Chapters I, III, IV, and VII are all related and could be good to look at.</p>
+
+<p>Bonus questions, for reflection: How would an intercept be included in the model?  What failure mode did the presented Ridge Regression code demonstrate (it relates to the learning rate)?  What systems can be modeled using linear models?</p>
+
+<p>###2014/10/04</p>
+
+<p>Hey DoML, </p>
+
+<p>The glossary for the terms listed is complete for a first pass.  If you get a chance, review the paper presented in the last meeting (<a href="http://homes.cs.washington.edu/%7Epedrod/papers/cacm12.pdf">http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf</a>) and reference the glossary for terms you didn’t understand.  When I first read the paper, I didn’t think much of the comment on classification hypotheses using the Disjunctive Normal Form, but after rereading and defining it in context, I thought it was a very useful distillation of the idea of overfitting and strong v. weak assumptions (DNF is one of the weakest assumption schemes possible).</p>
+
+<p>Glossary:</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1PWMGQ2d3ygvMuLUc7Ce2ZOZWBMPvg4yd2vRkue181GM/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1PWMGQ2d3ygvMuLUc7Ce2ZOZWBMPvg4yd2vRkue181GM/edit?usp=sharing</a></p>
+
+<p>Thought for reflection:</p>
+
+<p>Machine Learning – automated search for negative informational entropy.</p>
+
+<h3>
+<a id="20141007" class="anchor" href="#20141007" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014/10/07</h3>
+
+<p>Hey DoML,</p>
+
+<p>We’ll continue and hopefully finish our implementations next week.  If you’d like to work on it between now and then, feel free to email me or Subhash with any questions.  Also talk to us if you couldn’t make it but would like to know what’s going on.  The starter code is in P:\DoML_Week3, and the presentation is now there as well.  The forms of the necessary equations are in the attached file.  To translate semi-complex equations into code and see an implementation through are valuable experiences, which is our motivation for having every one work through this algorithm.</p>
+
+<p>Ryan introduced the first short-term project, a Kaggle competition on city bikeshare usage.  After finishing the logistic regression implementation, you can go on to starting work with Kaggle, scikit learn, and other cool things that Ryan will talk more about at the next meeting.</p>
+
+<h3>
+<a id="20141014" class="anchor" href="#20141014" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014/10/14</h3>
+
+<p>TL;DR: ‘Office Hours.’ A little bit more logistic regression next week, then @ 7 PM, transition to project phase starting with a Kaggle competition. It’ll be a party, everyone’s invited.</p>
+
+<p>In today’s meeting we continued with implementation of logistic regression and introduced non-linear decision boundaries.  In the first part of next week’s meeting, we will experiment with non-linear decision boundaries, and play around with several data sets.  Paul will present (or simply give) new optimization methods.  Gradient Descent is a great introduction to optimization because of the simplicity of the update step, but there are much better methods for really any problem formulation.  If you’ve had your share of code and parameter-tuning struggles (which are character building) and have seen the interaction of the different parts of the algorithm, it is appropriate to move on to better algorithms and deconstruct their black boxes as necessary.  During the navigation meeting (immediately after the regular meeting, in which everyone is invited to participate) we concluded that enough time had been spent in the implementation weeds, so sometime soon I’ll put my code in the DoML folder for comparison.  Further, the beginning of next week will have minimal implementation involved – mostly parameter exploration and data set exploration. </p>
+
+<h3>
+<a id="20141021" class="anchor" href="#20141021" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014/10/21</h3>
+
+<p>Today, we wrapped up our talks on logistic regression with non-linear decision boundaries, and launched the Kaggle project boat.  This is a fairly open-ended project time where we’re all working on the same bike sharing modeling Kaggle competition (<a href="https://www.kaggle.com/c/bike-sharing-demand">https://www.kaggle.com/c/bike-sharing-demand</a>) for three weeks.  </p>
+
+<h3>
+<a id="20141111" class="anchor" href="#20141111" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014/11/11</h3>
+
+<p>Tonight we gathered in the DoML harbor to have our first learnshare, in which we talked about insights and challenges we had during the warm-up project phase.  We then did some drydock construction in our project ideation and team formation phase.  There are three rough categories of ideas: continue with bikeshare, start another predictive modeling task with given data, such as kaggle or “Driven Data” (data competitions centered on social impact, talk to Ryan about this), or a new domain for those who hunger for adventure on uncharted waters and are willing to spend the time to do it. </p>
       </section>
     </div>
 
